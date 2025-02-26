@@ -7,4 +7,64 @@
     android:layout_height="match_parent"
     tools:context=".Contacto">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <include android:id="@+id/miActionBarCnt"
+            layout="@layout/action_bar"
+            />
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/margin_acerca_de"
+
+
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/titulo_contacto"
+                android:textSize="@dimen/titulo_contacto"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/titulo_acerca_de"
+
+                android:layout_marginStart="@dimen/margin"                /><![CDATA[
+
+            android:text="@string/correo"
+                android:textSize="@dimen/size_datos" />
+
+
+
+            ]]>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_box1"
+                android:layout_marginStart="@dimen/margin"
+                android:gravity="center"
+                android:text="@string/nombre"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_box2"
+                android:gravity="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="@dimen/size_datos"
+                tools:text="@string/correo" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_box3"
+                android:gravity="center"
+                android:text="@string/mensaje"
+                android:textSize="@dimen/size_datos"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/enviar"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
