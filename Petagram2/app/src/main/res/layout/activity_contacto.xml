@@ -30,41 +30,66 @@
                 android:gravity="center"
                 android:layout_marginTop="@dimen/titulo_acerca_de"
 
-                android:layout_marginStart="@dimen/margin"                /><![CDATA[
+                android:layout_marginStart="@dimen/margin"                />
 
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
             android:text="@string/correo"
                 android:textSize="@dimen/size_datos" />
 
 
 
-            ]]>
+            <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_box2"
+                android:gravity="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="@dimen/size_datos"
+                android:inputType="textEmailAddress"
+
+                android:id="@+id/cnt_email"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nombre"
+                android:textSize="@dimen/size_datos" />
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/size_box1"
                 android:layout_marginStart="@dimen/margin"
                 android:gravity="center"
-                android:text="@string/nombre"/>
+                android:inputType="textPersonName"
 
-            <EditText
+                android:id="@+id/cnt_nombre"/>
+            <TextView
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/size_box2"
-                android:gravity="center"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                android:textSize="@dimen/size_datos"
-                tools:text="@string/correo" />
+                android:layout_height="wrap_content"
+                android:text="@string/mensaje"
+                android:textSize="@dimen/size_datos" />
+
+
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/size_box3"
                 android:gravity="center"
-                android:text="@string/mensaje"
-                android:textSize="@dimen/size_datos"/>
+
+                android:inputType="textAutoCorrect"
+                android:textSize="@dimen/size_datos"
+                android:id="@+id/cnt_menaje"/>
+
             <Button
+                android:id="@+id/bt_mail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/enviar"
+                android:layout_gravity="center"
                 android:gravity="center"
-                android:layout_gravity="center"/>
+                android:onClick="CambiaACorreo"
+                android:text="@string/enviar"
+                android:textSize="@dimen/titulo_contacto" />
         </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
