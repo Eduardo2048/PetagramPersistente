@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -54,13 +55,24 @@ public void CambiaACorreo(View v)
     String miMail=String.valueOf(tv_Email.getText());
     String miMensaje = String.valueOf(tv_Menasaje.getText());
 
-    Intent intent = new Intent(v.getContext(),Correo.class);
+    if (miNombre.isBlank()) {
+        Toast.makeText(getApplicationContext(), getResources().getString(R.string.error_nombre), Toast.LENGTH_LONG).show();
+    }
+    else if (miMail.isBlank()) {
+        Toast.makeText(getApplicationContext(), getResources().getString(R.string.error_mail), Toast.LENGTH_LONG).show();
+    }
+    else if (miMensaje.isBlank()) {
+        Toast.makeText(getApplicationContext(), getResources().getString(R.string.error_mensaje), Toast.LENGTH_LONG).show();
+    }
+    else {
+        Intent intent = new Intent(v.getContext(), Correo.class);
 
-    intent.putExtra(getResources().getString(R.string.clave_email),miMail);
-    intent.putExtra(getResources().getString(R.string.clave_mensaje),miMensaje);
-    intent.putExtra(getResources().getString(R.string.clave_nomebre),miNombre);
+        intent.putExtra(getResources().getString(R.string.clave_email), miMail);
+        intent.putExtra(getResources().getString(R.string.clave_mensaje), miMensaje);
+        intent.putExtra(getResources().getString(R.string.clave_nomebre), miNombre);
 
-    startActivity(intent);
+        startActivity(intent);
+    }
 }
 
 

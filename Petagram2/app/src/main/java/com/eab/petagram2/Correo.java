@@ -43,7 +43,7 @@ public class Correo extends AppCompatActivity {
 
 
 
-        Toast.makeText(getApplicationContext(),miNombre,Toast.LENGTH_LONG).show();
+       // Toast.makeText(getApplicationContext(),miNombre,Toast.LENGTH_LONG).show();
         tv_Email=(TextView) findViewById(R.id.email_contacto);
         tv_Email.setText(miEmail);
         tv_Contacto=(TextView)findViewById(R.id.nombre_contacto);
