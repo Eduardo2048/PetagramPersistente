@@ -16,7 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 public class MasBuscados extends AppCompatActivity   {
-    private String TAG= "DBG_EAB";
+
     ArrayList<Mascota> mascotas;
     RecyclerView ListaMascotas;
     @Override
