@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DetalleMascotaFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginLeft="80dp"
+
+
+        android:src="@drawable/perro1"
+        app:civ_border_color="#3f51b5"
+        app:civ_border_width="4dp"
+        app:civ_shadow="true"
+
+        app:civ_shadow_color="#3f51b5"
+        app:civ_shadow_radius="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvNombreFotoDetalle"
+        android:text="@string/perro1"
+        android:textSize="@dimen/titulo_contacto"
+        android:textStyle="bold"
+        android:gravity="center"
+
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rvMascotasDetalle"
+    />
+    </LinearLayout>
+  <!--
+    <GridLayout
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/altura_grid"
+        android:layout_marginTop=  "@dimen/posicion_grid"
+        android:columnCount="3" >
+
+
+    </GridLayout>
+    -->
+
+
+</FrameLayout>
