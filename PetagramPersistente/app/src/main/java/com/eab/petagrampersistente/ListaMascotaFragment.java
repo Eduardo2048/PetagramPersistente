@@ -96,14 +96,14 @@ public class ListaMascotaFragment extends Fragment {
     private void  InicializarListaMascotas()
     {
         mascotas=new ArrayList<Mascota>();
-        mascotas.add(new Mascota(R.drawable.perro1,getResources().getString(R.string.perro1),3,R.drawable.ic_hueso1));
-        mascotas.add(new Mascota(R.drawable.perro2,getResources().getString(R.string.perro2),1,R.drawable.ic_hueso1));
-        mascotas.add(new Mascota(R.drawable.perro5,getResources().getString(R.string.perro5),6,R.drawable.ic_hueso1));
-        mascotas.add(new Mascota(R.drawable.perro3,getResources().getString(R.string.perro3),1,R.drawable.ic_hueso1));
-        mascotas.add(new Mascota(R.drawable.perro4,getResources().getString(R.string.perro4),4,R.drawable.ic_hueso1));
-        mascotas.add(new Mascota(R.drawable.perro6,getResources().getString(R.string.perro6),3,R.drawable.ic_hueso1));
-        mascotas.add(new Mascota(R.drawable.perro7,getResources().getString(R.string.perro7),2,R.drawable.ic_hueso1));
-        mascotas.add(new Mascota(R.drawable.perro8,getResources().getString(R.string.perro8),5,R.drawable.ic_hueso1));
+        mascotas.add(new Mascota(R.drawable.perro1,getResources().getString(R.string.perro1),3));
+        mascotas.add(new Mascota(R.drawable.perro2,getResources().getString(R.string.perro2),1));
+        mascotas.add(new Mascota(R.drawable.perro5,getResources().getString(R.string.perro5),6));
+        mascotas.add(new Mascota(R.drawable.perro3,getResources().getString(R.string.perro3),1));
+        mascotas.add(new Mascota(R.drawable.perro4,getResources().getString(R.string.perro4),4));
+        mascotas.add(new Mascota(R.drawable.perro6,getResources().getString(R.string.perro6),3));
+        mascotas.add(new Mascota(R.drawable.perro7,getResources().getString(R.string.perro7),2));
+        mascotas.add(new Mascota(R.drawable.perro8,getResources().getString(R.string.perro8),5));
 
 
     }

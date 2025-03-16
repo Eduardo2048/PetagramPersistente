@@ -61,12 +61,12 @@ public class MasBuscados extends AppCompatActivity   {
     private void  InicializarListaMascotas()
     {
         mascotas=new ArrayList<Mascota>();
-        mascotas.add(new Mascota(R.drawable.perro5,getResources().getString(R.string.perro5),6,R.drawable.ic_hueso1));
-        mascotas.add(new Mascota(R.drawable.perro8,getResources().getString(R.string.perro8),5,R.drawable.ic_hueso1));
-        mascotas.add(new Mascota(R.drawable.perro4,getResources().getString(R.string.perro4),4,R.drawable.ic_hueso1));
-        mascotas.add(new Mascota(R.drawable.perro1,getResources().getString(R.string.perro1),3,R.drawable.ic_hueso1));
-        mascotas.add(new Mascota(R.drawable.perro7,getResources().getString(R.string.perro7),2,R.drawable.ic_hueso1));
+        mascotas.add(new Mascota(R.drawable.perro5,getResources().getString(R.string.perro5),6));
+        mascotas.add(new Mascota(R.drawable.perro8,getResources().getString(R.string.perro8),5));
+        mascotas.add(new Mascota(R.drawable.perro4,getResources().getString(R.string.perro4),4));
+        mascotas.add(new Mascota(R.drawable.perro1,getResources().getString(R.string.perro1),3));
+        mascotas.add(new Mascota(R.drawable.perro7,getResources().getString(R.string.perro7),2));
 
 
+        }
     }
-}

@@ -5,22 +5,22 @@ private int i_Imagen;
 private String s_Name;
 private int i_Likes;
 
-private int i_Hueso;
+//private int i_Hueso;
 
-    public Mascota(int i_Imagen, String s_Name, int i_Likes, int i_Hueso) {
+    public Mascota(int i_Imagen, String s_Name, int i_Likes ) {
         this.i_Imagen = i_Imagen;
         this.s_Name = s_Name;
         this.i_Likes = i_Likes;
-        this.i_Hueso = i_Hueso;
+        //this.i_Hueso = i_Hueso;
     }
 
-    public int getI_Hueso() {
-        return i_Hueso;
-    }
+    //public int getI_Hueso() {
+     //   return i_Hueso;
+   // }
 
-    public void setI_Hueso(int i_Hueso) {
-        this.i_Hueso = i_Hueso;
-    }
+    //public void setI_Hueso(int i_Hueso) {
+    //    this.i_Hueso = i_Hueso;
+   // }
 
     public int getI_Imagen() {
         return i_Imagen;
