@@ -15,13 +15,18 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.eab.petagrampersistente.R;
 import com.eab.petagrampersistente.adapter.MascotaAdapter;
 import com.eab.petagrampersistente.pojo.Mascota;
+import com.eab.petagrampersistente.presentador.IMasBuscadosPresenter;
+import com.eab.petagrampersistente.presentador.MasBuscadosPresenter;
 
 import java.util.ArrayList;
 
-public class MasBuscados extends AppCompatActivity   {
+public class MasBuscados extends AppCompatActivity  implements IMasBuscadosView {
 
     ArrayList<Mascota> mascotas;
-    RecyclerView ListaMascotas;
+    RecyclerView rvMasBuscadas;
+
+    IMasBuscadosPresenter presenter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,16 +43,10 @@ public class MasBuscados extends AppCompatActivity   {
         setSupportActionBar(miToolbar);
 
 
-        ListaMascotas=(RecyclerView) findViewById(R.id.rvMascotasMB);
-        // GridLayoutManager   LLM= new GridLayoutManager(this,2);
-        LinearLayoutManager LLM= new LinearLayoutManager(this);
-        LLM.setOrientation(LinearLayoutManager.VERTICAL);
-        ListaMascotas.setLayoutManager(LLM);
-        InicializarListaMascotas();
-        InicializarAdaptador();
+        rvMasBuscadas =(RecyclerView) findViewById(R.id.rvMascotasMB);
+        presenter=new MasBuscadosPresenter(this,getApplicationContext()) ;
 
-
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.mas_buscados), (v, insets) -> {
+      ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.mas_buscados), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
@@ -56,19 +55,23 @@ public class MasBuscados extends AppCompatActivity   {
 
     }
 
-    private void InicializarAdaptador() {
+
+    @Override
+    public void generarLinearLayoutVertical() {
+        LinearLayoutManager LLM= new LinearLayoutManager(this);
+        LLM.setOrientation(LinearLayoutManager.VERTICAL);
+        rvMasBuscadas.setLayoutManager(LLM);
+    }
+
+    @Override
+    public MascotaAdapter crearAdapter(ArrayList<Mascota> mascotas) {
         MascotaAdapter Adapter = new MascotaAdapter(mascotas,this);
-        ListaMascotas.setAdapter(Adapter);
+        return Adapter;
+  
     }
-    private void  InicializarListaMascotas()
-    {
-        mascotas=new ArrayList<Mascota>();
-        mascotas.add(new Mascota(R.drawable.perro5,getResources().getString(R.string.perro5),6));
-        mascotas.add(new Mascota(R.drawable.perro8,getResources().getString(R.string.perro8),5));
-        mascotas.add(new Mascota(R.drawable.perro4,getResources().getString(R.string.perro4),4));
-        mascotas.add(new Mascota(R.drawable.perro1,getResources().getString(R.string.perro1),3));
-        mascotas.add(new Mascota(R.drawable.perro7,getResources().getString(R.string.perro7),2));
 
-
-        }
+    @Override
+    public void inicializarAdaptadorRV(MascotaAdapter adapter) {
+        rvMasBuscadas.setAdapter(adapter);
     }
+}

@@ -18,24 +18,12 @@ import com.eab.petagrampersistente.presentador.ListaMascotaFrPresenter;
 
 import java.util.ArrayList;
 
-/**
- * A simple {@link Fragment} subclass.
-// * Use the {@link ListaMascotaFragment#
-newInstance} factory method to
- * create an instance of this fragment.
- */
-
-
 
 
 
 public class ListaMascotaFragment extends Fragment implements IListaMascotaFrView {
 
     // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-  /*  private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-*/
 
     private ArrayList<Mascota> mascotas;
     private RecyclerView rvMascotas;
