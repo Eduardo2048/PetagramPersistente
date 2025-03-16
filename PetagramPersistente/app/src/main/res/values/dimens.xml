@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_vertical_margin">20dp</dimen>
+    <dimen name="corner_radius_cardview">5dp</dimen>
+    <dimen name="size_nombre">20sp</dimen>
+    <dimen name="elevation_bar">4dp</dimen>
+    <dimen name="margin">10dp</dimen>
+    <dimen name="size_icon">35dp</dimen>
+    <dimen name="size_acerca_de">18sp</dimen>
+    <dimen name="margin_acerca_de">20dp</dimen>
+    <dimen name="titulo_acerca_de">40sp</dimen>
+    <dimen name="titulo_contacto">30sp</dimen>
+    <dimen  name="size_datos">20sp</dimen>
+    <dimen name="size_box1">80dp</dimen>
+    <dimen name="size_box2">80dp</dimen>
+    <dimen name="size_box3">250dp</dimen>
+    <dimen name="margin_tab">80dp</dimen>
+    <dimen name ="margin_list">85dp</dimen>
+    <dimen name="altura_foto">200dp</dimen>
+    <dimen name="margen_txt">280dp</dimen>
+    <dimen name="posicion_grid">350dp</dimen>
+    <dimen name="altura_grid">350dp</dimen>
+    <dimen name="altura_foto_detalle">150dp</dimen>
+    <dimen name="posicion_lista">45dp</dimen>
+</resources>

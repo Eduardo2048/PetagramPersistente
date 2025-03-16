@@ -1,4 +1,4 @@
-package com.eab.petagram2;
+package com.eab.petagrampersistente;
 
 import android.os.Bundle;
 
@@ -9,12 +9,15 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.eab.petagrampersistente.R;
+
 public class AcercaDe extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
+
         setContentView(R.layout.activity_acerca_de);
 
         Toolbar miToolbar=(Toolbar) findViewById(R.id.miActionBarBio);

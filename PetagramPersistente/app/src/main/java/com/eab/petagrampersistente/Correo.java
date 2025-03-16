@@ -1,5 +1,4 @@
-package com.eab.petagram2;
-
+package com.eab.petagrampersistente;
 import android.os.Bundle;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -8,6 +7,8 @@ import androidx.activity.EdgeToEdge;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+
+import com.eab.petagrampersistente.R;
 
 import org.w3c.dom.Text;
 

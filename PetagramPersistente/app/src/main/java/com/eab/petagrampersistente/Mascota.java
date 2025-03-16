@@ -1,4 +1,4 @@
-package com.eab.petagram2;
+package com.eab.petagrampersistente;
 
 public class Mascota {
 private int i_Imagen;
