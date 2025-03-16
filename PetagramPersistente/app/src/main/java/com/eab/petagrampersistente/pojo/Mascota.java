@@ -1,4 +1,4 @@
-package com.eab.petagrampersistente;
+package com.eab.petagrampersistente.pojo;
 
 public class Mascota {
 private int i_Imagen;
