@@ -1,4 +1,4 @@
-package com.eab.petagram2;
+package com.eab.petagrampersistente;
 
 import android.app.Activity;
 import android.view.LayoutInflater;
@@ -10,6 +10,8 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.eab.petagrampersistente.R;
 
 import java.util.ArrayList;
 

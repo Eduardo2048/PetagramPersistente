@@ -1,4 +1,4 @@
-package com.eab.petagram2;
+package com.eab.petagrampersistente;
 
 import android.os.Bundle;
 
@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 
+import com.eab.petagrampersistente.R;
 
 import java.util.ArrayList;
 

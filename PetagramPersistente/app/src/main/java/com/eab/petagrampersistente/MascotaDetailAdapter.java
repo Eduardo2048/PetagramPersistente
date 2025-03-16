@@ -1,4 +1,4 @@
-package com.eab.petagram2;
+package com.eab.petagrampersistente;
 
 import android.app.Activity;
 import android.view.LayoutInflater;
