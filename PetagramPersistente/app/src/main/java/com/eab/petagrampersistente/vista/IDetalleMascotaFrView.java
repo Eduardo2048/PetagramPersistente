@@ -1,6 +1,6 @@
 package com.eab.petagrampersistente.vista;
 
-import com.eab.petagrampersistente.MascotaAdapterDetalle;
+import com.eab.petagrampersistente.adapter.MascotaAdapterDetalle;
 import com.eab.petagrampersistente.pojo.Mascota;
 
 import java.util.ArrayList;

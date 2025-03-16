@@ -10,7 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.eab.petagrampersistente.MascotaAdapterDetalle;
+import com.eab.petagrampersistente.adapter.MascotaAdapterDetalle;
 import com.eab.petagrampersistente.R;
 import com.eab.petagrampersistente.pojo.Mascota;
 import com.eab.petagrampersistente.presentador.DetalleMascotaFrPresenter;

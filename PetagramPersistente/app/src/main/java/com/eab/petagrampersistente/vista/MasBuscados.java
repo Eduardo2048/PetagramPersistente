@@ -1,4 +1,4 @@
-package com.eab.petagrampersistente;
+package com.eab.petagrampersistente.vista;
 
 import android.os.Bundle;
 
@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 
+import com.eab.petagrampersistente.R;
 import com.eab.petagrampersistente.adapter.MascotaAdapter;
 import com.eab.petagrampersistente.pojo.Mascota;
 
