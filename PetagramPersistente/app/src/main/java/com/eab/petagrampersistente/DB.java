@@ -1,4 +1,4 @@
 package com.eab.petagrampersistente;
 
-public class MacotaAdapterDetalle {
+public class DB {
 }
