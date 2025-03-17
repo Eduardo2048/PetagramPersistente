@@ -1,6 +1,16 @@
 package com.eab.petagrampersistente.pojo;
 
 public class Mascota {
+    public int getI_ID() {
+        return i_ID;
+    }
+
+    public void setI_ID(int i_ID) {
+        this.i_ID = i_ID;
+    }
+
+    private int i_ID;
+
 private int i_Imagen;
 private String s_Name;
 private int i_Likes;
@@ -12,6 +22,10 @@ private int i_Likes;
         this.s_Name = s_Name;
         this.i_Likes = i_Likes;
         //this.i_Hueso = i_Hueso;
+    }
+
+    public Mascota() {
+
     }
 
     //public int getI_Hueso() {

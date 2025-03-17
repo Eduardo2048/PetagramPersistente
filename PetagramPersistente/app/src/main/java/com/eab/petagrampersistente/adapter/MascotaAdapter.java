@@ -11,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.eab.petagrampersistente.R;
+import com.eab.petagrampersistente.db.ConstructorMascotas;
 import com.eab.petagrampersistente.pojo.Mascota;
 
 import java.util.ArrayList;
@@ -56,7 +57,10 @@ public class MascotaAdapter extends RecyclerView.Adapter<MascotaAdapter.MascotaV
         @Override
         public void onClick(View v) {
            // Toast.makeText(activity,String.valueOf(mascota.getI_Likes()),Toast.LENGTH_SHORT).show();
-            mascota.setI_Likes(mascota.getI_Likes()+1);
+          // mascota.setI_Likes(mascota.getI_Likes()+1);
+
+            ConstructorMascotas constructorMascotas=new ConstructorMascotas(v.getContext());
+           constructorMascotas.incrementaLike(mascota);
             notifyItemChanged(position);
         }
     });

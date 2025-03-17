@@ -11,8 +11,9 @@ public class ConstructorMasBuscados {
     public ConstructorMasBuscados(Context context) {
         this.context = context;
     }
-    public ArrayList<Mascota> obtenerMasBuscados() {
 
+    public ArrayList<Mascota> obtenerMasBuscados() {
+        /*
         ArrayList<Mascota> mascotas =new ArrayList<Mascota>();
         mascotas.add(new Mascota(R.drawable.perro1,String.valueOf(R.string.perro1),3));
         mascotas.add(new Mascota(R.drawable.perro2,String.valueOf(R.string.perro2),1));
@@ -22,6 +23,11 @@ public class ConstructorMasBuscados {
         return mascotas;
 
 
+         */
+        BaseDatos db = new BaseDatos(context);
+        return db.obtenerMasBuscados();
 
     }
+
+
 }
